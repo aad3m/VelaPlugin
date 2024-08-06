@@ -19,4 +19,10 @@
     <extensions defaultExtensionNs="com.intellij">
 
     </extensions>
+
+    <actions>
+        <group id="VelaYAMLChecker.Group" text="Vela YAML Checker" description="Check Vela YAML">
+            <action id="VelaYAMLChecker.CheckAction" class="org.aad3m.velaplugin.CheckVelaYAMLAction" text="Check Vela YAML" description="Check Vela YAML"/>
+        </group>
+    </actions>
 </idea-plugin>

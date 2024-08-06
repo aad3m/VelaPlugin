@@ -5,12 +5,10 @@ plugins {
 }
 
 group = "org.aad3m"
-version = "1.0-SNAPSHOT"
+version = "1.0.0"
 
 repositories {
     mavenCentral()
-    maven { url = uri("https://www.jetbrains.com/intellij-repository/releases") }
-    maven { url = uri("https://www.jetbrains.com/intellij-repository/snapshots") }
 }
 
 intellij {
@@ -19,6 +17,9 @@ intellij {
     plugins.set(listOf("org.jetbrains.plugins.yaml"))
 }
 
+dependencies {
+    implementation("org.yaml:snakeyaml:2.0")
+}
 tasks {
     withType<JavaCompile> {
         sourceCompatibility = "17"
